@@ -1,0 +1,20 @@
+#!/bin/sh
+
+EXTS="c h cc cpp cxx cxp hxx hpp hh hp pc cp cq asm m f90 f for py java cs"
+
+cat /dev/null > cscope.files
+
+echo "Finding source files ..."
+for ext in $EXTS; do
+    echo -n "   \*.${ext}"
+    find ./ -name \*.${ext} >> cscope.files
+    echo " -> OK."
+done
+
+echo -n "Making tags ... "
+ctags --extras=+fq --languages=C,C++,C#,Asm,MatLab,Fortran,Python,Java -L cscope.files
+echo "done"
+
+echo -n "Making cscope index ... "
+cscope -b -q -i cscope.files
+echo "done"

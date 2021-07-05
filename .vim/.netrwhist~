@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/marcinki/smb/wrlinb114/marcinki/ulphy/fsm3-trunk/C_Application'
+let g:netrw_dirhist_2='/home/marcinki/smb/wrlinb114/marcinki/ulphy/fsm3-trunk/C_Application/SC_PHY'
+let g:netrw_dirhist_3='/home/marcinki/smb/wrlinb114/marcinki/ulphy/fsm3-trunk/C_Application/SC_PHY/SS_PHY_RX_FSM3'
+let g:netrw_dirhist_4='/home/marcinki/smb/wrlinb114/marcinki/ulphy/fsm3-trunk/C_Application/SC_PHY/SS_PHY_RX_FSM3/RxReceiver'
+let g:netrw_dirhist_5='/home/marcinki/smb/wrlinb114/marcinki/ulphy/fsm3-trunk/C_Application/SC_PHY/SS_PHY_RX_FSM3/RxReceiver/PrachReceiver'

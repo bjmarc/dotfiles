@@ -1,0 +1,9 @@
+hardstatus alwayslastline
+#hardstatus string '%{= kg}[%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{W}%c%{g}]'
+hardstatus string '%{= kw}[ %{= kg}%H%{= kw} ][%= %{= kw}%?%-Lw%?%{= kW}%n*%f %t%?%?%{= kw}%?%+Lw%?%?%= ][ %{r}%l%{w} ]%{w}[%{r} %d/%m/%y %C %A %{w}]%{w}'
+
+startup_message off
+
+defscrollback 128000
+shell -bash
+

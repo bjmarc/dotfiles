@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/bma/txt/ado10811'
+let g:netrw_dirhist_4='/home/bma/txt/ado9796/2020-08-17'
+let g:netrw_dirhist_3='/home/bma/txt/ado9796'
+let g:netrw_dirhist_2='/home/bma/dev/py/us'
+let g:netrw_dirhist_1='/home/bma/dev/cxx/sql/rvr'
