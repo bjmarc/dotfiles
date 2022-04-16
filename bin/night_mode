@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set +x
+
+# xrandr --output DVI-D-0 --gamma 1.0:0.8:0.7 --brightness 1.0
+
+night_mode() { 
+    DISPLAYS=$(xrandr | awk '/connected/ { print $1 }')
+  for disp in $DISPLAYS; do 
+      echo "--## gamma <- $1, brightness <- $2"
+      xrandr --output $disp --gamma $1 --brightness $2 
+  done 
+} 
+
+case $1 in 
+  off) night_mode 1:1:1 1.0
+      ;; 
+  *)   night_mode 1.2:0.8:0.7 1.0
+      ;;
+esac
+
