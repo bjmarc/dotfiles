@@ -14,8 +14,11 @@ sy on
 colorscheme default       " set colorscheme
 "colorscheme molokai
 "set guifont=Consolas:h11:cDEFAULT
-hi CursorLine   cterm=NONE ctermbg=darkred   ctermfg=black   guibg=darkred guifg=white
+hi CursorLine   cterm=underline  guibg=darkred guifg=white
+"hi CursorLine   cterm=NONE ctermbg=darkred   ctermfg=black   guibg=darkred guifg=white
+"hi CursorLine   cterm=NONE ctermbg=darkgrey ctermfg=black   guibg=darkred guifg=white
 hi CursorColumn cterm=None ctermbg=darkred   ctermfg=yellow  guibg=darkred guifg=white
+hi MatchParen cterm=none ctermbg=red ctermfg=white
 hi Folded guibg=black guifg=grey
 hi FoldColumn guibg=darkgrey guifg=white
 hi Search cterm=NONE ctermfg=black ctermbg=darkred
@@ -37,6 +40,9 @@ set visualbell
 set noswapfile  " disable swapfile
 
 set tags=./tags;
+
+let g:go_fmt_command = "goimports"    " Run goimports along gofmt on each save     
+let g:go_auto_type_info = 1           " Automatically get signature/type info for object under cursor     
 
 filetype on
 filetype plugin on
